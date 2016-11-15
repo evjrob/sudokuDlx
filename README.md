@@ -7,6 +7,7 @@ A sudoku can be solved using the method: Solve(puzzle [][]int, blockXDim, blockY
 The dashes, vertical lines, and plus cells below are not part of the int slice, but included for the sake of visualizaton.
 
 To solve a standard sudoku stored in a variable named puzzle:
+
 | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|
 |3| | |\|| |8| |\|| | | |
@@ -26,6 +27,7 @@ solution, success := sudokuDlx.Solve(puzzle, 3, 3)
 ```
 
 Which will return success = true with the solution:
+
 | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|
 |3|5|4|\||1|8|6|\||9|2|7|
@@ -40,6 +42,7 @@ Which will return success = true with the solution:
 |8|4|5|\||2|3|1|\||7|9|6|
 
 To solve a non standard dimension sudoku like this 7x2 puzzle:
+
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |  | 1|  |  | 2|10| 7|\||  |  |  |  |  |  |11|
